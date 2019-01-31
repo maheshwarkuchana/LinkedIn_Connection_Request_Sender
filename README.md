@@ -4,7 +4,7 @@ Bot which is personalized in sending connection requests who are related to Mach
 
 Prerequisites:
 1) Selenium package   ******pip install selenium******
-2) NLTK package       *****pip install nltk******
+2) NLTK package       *****pip install nltk*****
 
 
 Instructions to run the program:
