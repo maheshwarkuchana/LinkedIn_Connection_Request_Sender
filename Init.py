@@ -2,12 +2,10 @@ from selenium import webdriver
 import Filtering_Connections
 
 
-website_link = "https://www.linkedin.com/m/login"
-browser = webdriver.Firefox()
-browser.get((website_link))
-
 def Linkedin_signIn():
-
+    website_link = "https://www.linkedin.com/m/login"
+    browser = webdriver.Firefox()
+    browser.get((website_link))
     #Please edit email and password or else program runs into errors
     email = "*****Your Email Here*****"
     pass_word = "*****Your Password Here*****"
@@ -31,4 +29,8 @@ def Linkedin_signIn():
     signInButton.click()
     Filtering_Connections.My_Network(browser)
 
-Linkedin_signIn()
+i = 0
+while i!=10:
+
+    Linkedin_signIn()
+    i+=1
