@@ -5,7 +5,7 @@ import time,os
 
 stop = set(stopwords.words('english'))
 
-specifications = {"machine", "google", "learning", "computer", "vision", "image", "processing", "security","cyber","developer", "engineer", "ai", "software", "summer", "developer", "python","computer", "ml"
+specifications = {"machine", "google", "learning", "computer", "vision", "image", "processing", "security","cyber","developer", "engineer", "ai", "summer", "developer", "python","computer", "ml"
                   "data","linkedin","paytm","visa","hyderabad","amazon","research","flipkart","genpact","tesla","facebook","pytorch","apple","scientist", "analyst", "enthusiast", "deep", "learning", "microsoft", "intel", "ibm", "nlp", "accenture", "hp", "dell"}
 
 
