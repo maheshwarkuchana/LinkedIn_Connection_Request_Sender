@@ -16,9 +16,12 @@ def Linkedin_signIn():
     element_for_submit = "button"
 
     time.sleep(3)
-    browser.switch_to_frame(
-        browser.find_element_by_class_name("authentication-iframe"))
-    signIn_link = browser.find_element_by_link_text("Sign in")
+    try:
+        signin = browser.find_element_by_class_name("content-container")
+    except:
+        signin = browser.find_element_by_class_name("main")
+
+    signIn_link = signin.find_element_by_link_text("Sign in")
     signIn_link.click()
 
     username = browser.find_element_by_name(element_for_username)
