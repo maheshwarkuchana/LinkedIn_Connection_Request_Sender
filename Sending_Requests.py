@@ -1,9 +1,9 @@
-def Send_Request(Person, Button, n):
+def Send_Request(Person, n, name, occupation):
     
-    li_button_num = Button+8  #7 for me
-    li_button = Person.find_element_by_id("ember"+str(li_button_num))
+    li_button = Person.find_element_by_class_name("full-width.artdeco-button.artdeco-button--2.artdeco-button--full.artdeco-button--secondary.ember-view")
     try:
         li_button.click()
+        print("Request Sent to: ", name, " - ", occupation)
         n = n+1
     except:
         pass
